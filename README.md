@@ -16,7 +16,7 @@ murmurhash3 x64 128 bit unsigned hex:
 
 ## Library
 
-+ Golang [murmur3](github.com/spaolacci/murmur3)
++ Golang [murmur3](https://github.com/spaolacci/murmur3)
 + Javascript [murmurHash3js](https://github.com/pid/murmurHash3js)
 + Python [mmh3](https://pypi.org/project/mmh3/)
 

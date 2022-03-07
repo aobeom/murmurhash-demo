@@ -11,15 +11,15 @@ def calc32(key):
 # Return 128 bit hex (09c01ad2296d65bdb32ceb54cdb5b54a)
 def calc128(key):
     # 1. unsigned int to bytes
-    h128 = mmh3.hash128(key)
-    h128_int_len = h128.bit_length()
-    h128_byte_len, rem = divmod(h128_int_len, 8)
-    if rem:
-        h128_byte_len += 1
-    h128_bytes = h128.to_bytes(h128_byte_len, 'little')
+    # h128 = mmh3.hash128(key)
+    # h128_int_len = h128.bit_length()
+    # h128_byte_len, rem = divmod(h128_int_len, 8)
+    # if rem:
+    #     h128_byte_len += 1
+    # h128_bytes = h128.to_bytes(h128_byte_len, 'little')
 
     # 2. get bytes
-    # h128_bytes = mmh3.hash_bytes(key)
+    h128_bytes = mmh3.hash_bytes(key)
 
     h128_hex = binascii.b2a_hex(h128_bytes).decode("utf-8")
     return h128_hex
